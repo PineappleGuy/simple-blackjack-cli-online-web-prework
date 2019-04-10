@@ -41,7 +41,7 @@ def initial_round
   display_card_total(card_total)
 end
 
-def hit?(number)
+def hit?(card_total)
   # code hit? here
   prompt_user
   x = get_user_input
@@ -68,10 +68,10 @@ end
 def runner
   # code runner here
   welcome
-  total = initial_round
-  until total > 21
-  hit?(total)
-  display_card_total
+  card_total = initial_round
+  until card_total > 21
+  hit?(card_total)
+  display_card_total(card_total)
 end
 end_game
 end
