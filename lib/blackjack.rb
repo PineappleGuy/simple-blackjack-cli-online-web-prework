@@ -2,11 +2,11 @@ def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
 end
-card_total = 0
+
 def deal_card
   # code #deal_card here
-  x = rand(1..11)
-  card_total = card_total + x
+  rand(1..11)
+
 end
 
 def display_card_total(card_total)
@@ -24,7 +24,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  answer = gets
+  gets.chomp
 
 end
 
@@ -41,7 +41,7 @@ def initial_round
   display_card_total(card_total)
 end
 
-def hit?()
+def hit?
   # code hit? here
   prompt_user
   get_user_input
