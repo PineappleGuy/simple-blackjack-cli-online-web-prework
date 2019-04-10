@@ -44,10 +44,10 @@ end
 def hit?(number)
   # code hit? here
   prompt_user
-  get_user_input
-  if "h"
+  x = get_user_input
+  if x == "h"
     deal_card + number
-  elsif "s"
+  elsif x == "s"
 
   else
     invalid_command
